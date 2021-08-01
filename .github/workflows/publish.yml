@@ -20,6 +20,6 @@ jobs:
           scope: '@autoshark-finance'
       - run: yarn
       - run: yarn build
-      - run: npm run release
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
